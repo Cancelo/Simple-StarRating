@@ -1,0 +1,2 @@
+# Simple-StarRating
+JS SimpleStarRating
