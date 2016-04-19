@@ -3,10 +3,8 @@
 <body>
 	<script>		
 		window.addEventListener('load', gogogo, false);
-		
 		var total = 0;
 		var votos = 0;
-		
 		var star0 = "<img src='0.png' alt='0'/>";
 		var star05 = "<img src='05.png' alt='05'/>";
 		var star1 = "<img src='1.png' alt='1'/>";
@@ -39,20 +37,13 @@
 		function starClick(){
 			votos++;			
 			total = total + parseInt(this.id);
-			
-			
 			var media = Math.round(parseFloat(total/votos)*2)/2;
-			
-			
-			
-			
 			mostrar(media);					
 			document.getElementById("info").innerHTML = "Votos: "+votos+ "\nTotal: " +total+ "\nMedia: " +media;
 		}
 		
 		function mostrar(media) {
 			var r = "";
-			
 			while(media > 0){
 				if(media >= 1){
 					r = r + star1;
@@ -63,7 +54,6 @@
 					media = media - 0.5;
 				}
 			}
-		
 			document.getElementById("rating").innerHTML = r;
 		}
 	</script>
